@@ -1,0 +1,10 @@
+BLL.Tests/obj/
+
+DAL.Tests/obj/
+DAL/obj/
+BLL/obj/
+Web/obj/
+
+DAL/bin/
+BLL/bin/
+Web/bin/
