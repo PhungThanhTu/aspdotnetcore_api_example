@@ -9,15 +9,7 @@ public class RepositoryContext : DbContext
     private readonly IConfig _config;
 
     public DbSet<User>? Users { get; set; }
-    public DbSet<TaskModel>? Tasks { get; set; }
 
-    public DbSet<Contact>? Contacts { get; set; }
-
-    public DbSet<Widget>? Widgets { get; set; }
-
-    public DbSet<Dashboard>? Dashboard { get; set; }
-
-    public DbSet<DashboardWidget>? DashboardWidgets { get; set; }
 
     public RepositoryContext(IConfig config)
     {
