@@ -1,3 +1,5 @@
+NETCoreThreeLayers/.vs/
+
 BLL.Tests/obj/
 
 DAL.Tests/obj/
@@ -8,3 +10,6 @@ Web/obj/
 DAL/bin/
 BLL/bin/
 Web/bin/
+
+BLL.Tests/bin/
+DAL.Tests/bin/

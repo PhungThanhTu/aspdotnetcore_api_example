@@ -24,7 +24,7 @@ namespace Presentation.Controllers
         [HttpPost, Route("login")]
         public IActionResult Login([FromBody] LoginRequest loginRequest)
         {
-            
+
             return Ok(_userServices.Authenticate(loginRequest));
         }
 
@@ -37,5 +37,6 @@ namespace Presentation.Controllers
             return Ok(registeredId);
         }
 
-       
+
+    }
 }

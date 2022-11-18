@@ -2,7 +2,8 @@ version: "3.8"
 
 services:
   mssql:
-    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    #image: "mcr.microsoft.com/mssql/server:2019-latest"
+    image: "mcr.microsoft.com/azure-sql-edge:latest"
     container_name: mssql         # tên container
     restart: always
     user: root

@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{51891CBD-9864-4293-82D3-53A1A494B734}|Web">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NETCoreThreeLayersCore" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.src.Presentation PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MultiItemStartupConfigurations />
+</Properties>
