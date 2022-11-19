@@ -73,7 +73,8 @@ public class UserService : IUserServices
             Subject = new ClaimsIdentity(new[]
             {
                 new Claim(ClaimTypes.Sid, user.Id.ToString()),
-                new Claim(ClaimTypes.Name,user.Username)
+                new Claim(ClaimTypes.Name,user.Username),
+     
             }),
             Expires = DateTime.UtcNow.AddMinutes(int.Parse(_configuration["JWT:Expires"])),
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)

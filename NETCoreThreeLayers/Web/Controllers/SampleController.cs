@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -17,7 +18,14 @@ namespace Presentation.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            var claimsIdentity = User.Identity as ClaimsIdentity;
+            var sid = claimsIdentity?.FindFirst(ClaimTypes.Sid);
+            var name = claimsIdentity?.FindFirst(ClaimTypes.Name);
+
+            var resultSid = sid?.Value is null ? "null" : sid.Value;
+            var resultName = name?.Value is null ? "null" : name.Value;
+
+            return new string[] { resultSid.ToString(), resultName.ToString() };
         }
 
         // GET: api/Sample/5
